@@ -24,7 +24,25 @@ function cargarProductos(productos) {
     `;
 
     contenedorProductos.appendChild(cartBox);
-  });
-}
+   // Evento para vaciar todos los elementos de shop-content
+   const vaciarCarritoBtn = document.getElementById("cart-vaciar");
+   vaciarCarritoBtn.addEventListener("click", function () {
+     console.log("Todos los Productos vaciados");
+     const shopContent = document.getElementById("cart-content");
+     shopContent.innerHTML = "";
+     //  updateTotal();
+   });
 
+   // Evento para vaciar uno de los elementos
+   const removeBtn = document.querySelectorAll(".cart-remove");
+   removeBtn.forEach((button) => {
+     button.addEventListener("click", function () {
+       console.log("Producto eliminado");
+       const product = button.closest(".shop-box");
+       product.remove();
+       // updateTotal();
+     });
+   });
+ });
+}
 cargarProductos;
