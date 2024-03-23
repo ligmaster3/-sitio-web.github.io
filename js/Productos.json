@@ -1,0 +1,181 @@
+
+ [
+  {
+    "id": 1,
+    "Categoria":  "Aventura",
+    "img": "https://images.thalia.media/-/BF2000-2000/083e7d2e81b0453a87e87f51d37d8ead/harry-potter-y-la-piedra-filosofal-epub-j-k-rowling.jpeg.jpg",
+    "titulo": "Harry Potter y la piedra filosofal",
+    "precio": 21.0
+  },
+  {
+    "id": 2,
+    "Categoria": "Aventura",
+    "img": "https://www.penguinlibros.com/co/1712466/julio-verne-la-isla-misteriosa-edicion-actualizada-ilustrada-y-adaptada.jpg",
+    "titulo": "La isla misteriosa",
+    "precio": 23.96
+  },
+  {
+    "id": 3,
+    "Categoria": "Aventura",
+    "img": "https://tavapy.gov.py/biblioteca/wp-content/uploads/2022/03/Harry-Potter-y-el-prisionero-de-Azkaban.jpg",
+    "titulo": "Harry Potter y el prisionero de Azkaban",
+    "precio": 26.0
+  },
+  {
+    "id": 4,
+    "Categoria": "Aventura",
+    "img": "https://i0.wp.com/www.webscolar.com/wp-content/uploads/2012/05/image0012-scaled.jpg?fit=643%2C1024&ssl=1",
+    "titulo": "Roberto por el buen camino",
+    "precio": 23.1
+  },
+  {
+    "id": 5,
+    "Categoria": "Aventura",
+    "img": "https://cdn.culturagenial.com/es/imagenes/1984-portada-cke.jpg",
+    "titulo": "1984",
+    "precio": 16.5
+  },
+  {
+    "id": 6,
+    "Categoria": "Fantasia",
+    "img": "https://cdn.culturagenial.com/es/imagenes/el-principito-portada-cke.jpg",
+    "titulo": "El principito",
+    "precio": 11.0
+  },
+  {
+    "id": 7,
+    "Categoria": "Fantasia",
+    "img": "https://pymstatic.com/3900/conversions/psicologicamente-hablando-default.jpg",
+    "titulo": "Un recorrido maravilloso",
+    "precio": 26.0
+  },
+  {
+    "id": 8,
+    "Categoria": "Fantasia",
+    "img": "https://cdn.culturagenial.com/es/imagenes/el-asesinato-de-platon-cke.jpg",
+    "titulo": "El Asesinato de Platon",
+    "precio": 36.0
+  },
+  {
+    "id":9,
+    "Categoria": "Fantasia",
+    "img": "https://media.revistagq.com/photos/5e78e4e85bcabb0008f4db8a/master/w_320%2Cc_limit/mejores-libros-3-amazon.jpg",
+    "titulo": "Las Mil Y Una Noche",
+    "precio": 26.0
+  },
+  {
+    "id": 10,
+    "Categoria": "Fantasia",
+    "img": "https://www.educaciontrespuntocero.com/wp-content/uploads/2018/12/El-gran-libro-de-las-emociones.jpg",
+    "titulo": "El gran libro de las emociones",
+    "precio": 26.0
+  },
+  {
+    "id": 11,
+    "Categoria": "Suspenso",
+    "img": "https://cdn.zendalibros.com/wp-content/uploads/20000-leguas-de-viaje-submarino-jules-verne.jpg",
+    "titulo": "20000 Leguas de Viaje Submarino Jules Verne",
+    "precio": 26.0
+  },
+  {
+    "id": 12,
+    "Categoria": "Suspenso",
+    "img": "https://cdn.culturagenial.com/es/imagenes/el-amor-en-los-tiempos-del-colera-portada-0-cke.jpg",
+    "titulo": "El Amor en los Tiempos del colera",
+    "precio": 26.0
+  },
+  {
+    "id": 13,
+    "Categoria": "Suspenso",
+    "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1689852420-717nxwCrIaL.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "titulo": "Mentiras Sobre Mi Madre",
+    "precio": 26.0
+  },
+  {
+    "id": 14,
+    "Categoria": "Suspenso",
+    "img": "https://img.wattpad.com/cover/138648551-256-k860618.jpg",
+    "ttitulo" : "Un Viaje Para Encontrarte",
+    "precio": 26.0
+  },
+  {
+    "id": 15,
+    "Categoria": "Suspenso",
+    "img": "https://cdn.culturagenial.com/es/imagenes/la-sombra-del-viento-portada-cke.jpg",
+    "titulo": "La Sombra Del Viento Portada",
+    "precio": 26.00
+  },
+  {
+    "id": 16,
+    "Categoria": "Teorias",
+    "img": "https://cdn.culturagenial.com/es/imagenes/la-biblioteca-de-fuego.jpg",
+    "titulo": "La biblioteca de fuego",
+    "precio": 26.00
+  },
+  {
+    "id": 17,
+    "Categoria": "Teorias",
+    "img": "https://cdn.culturagenial.com/es/imagenes/hasta-que-nos-quedemos-sin-estrellas.jpg",
+    "titulo": "hasta que nos-quedemos sin estrellas",
+    "precio": 26.00
+  },
+  {
+    "id": 18,
+    "Categoria": "Teorias",
+    "img": "https://hips.hearstapps.com/hmg-prod/images/el-libro-negro-de-las-horas-1658509838.jpg?resize=980:*",
+    "titulo": "el libro el libro negro de las horas",
+    "precio": 26.00
+  },
+  {
+    "id": 19,
+    "Categoria": "Teorias",
+    "img": "https://imagessl1.casadellibro.com/a/l/t0/91/9788408268291.jpg",
+    "titulo": "el juego de los crimenes",
+    "precio": 26.00
+  },
+  {
+    "id": 20,
+    "Categoria": "Teorias",
+    "img": "https://m.media-amazon.com/images/I/51HV5N7MJjL._AC_UF1000,1000_QL80_.jpg",
+    "titulo": "en el juego",
+    "precio": 26.00
+  },
+  {
+    "id": 21,
+    "Categoria": "Mezclas",
+    "img": "https://www.educaciontrespuntocero.com/wp-content/uploads/2021/09/no-crezcas-nunca.jpg",
+    "titulo": "No crezcas nunca",
+    "precio": 26.00
+  },
+  {
+    "id": 22,
+    "Categoria": "Mezclas",
+    "img": "https://www.estandarte.com/imagenes/fot_txt1470007391_gr.jpg",
+    "nombre": "Un oso llamado paddington",
+    "precio": 26.00
+  },
+  {
+    "id": 23,
+    "Categoria": "Mezclas",
+    "img": "https://imagessl5.casadellibro.com/a/l/s5/05/9788498381405.webp",
+    "titulo" : "Harry potter y las reliquias de la muerte",
+    "precio": 26.00
+  },
+  {
+    "id": 24,
+    "Categoria": "Mezclas",
+    "img" : "https://imagessl7.casadellibro.com/a/l/t5/77/9788498389777.jpg",
+    "titulo" : "Harry potter y la camara secreta",
+    "precio": 26.00
+  },
+  {
+    "id": 25,
+    "Categoria": "Mezclas",
+    "img" : "https://www.planetadelibros.com/usuaris/libros/thumbs/43cf622c-4467-49ae-afcd-920a53ed2fed/d_1200_1200/portada_la-sangre-del-padre_alfonso-goizueta_202310200850.webp",
+    "titulo" : "La sangre del padre",
+    "precio" : 33.34
+  }
+
+
+]
+
