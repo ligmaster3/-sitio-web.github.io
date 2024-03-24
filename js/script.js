@@ -54,7 +54,7 @@ function buscarLibro() {
   
 
 //---- Evento para cargar las card al index ---//
-
+let addbtn = document.querySelectorAll(".cart-btn-shop");
 
 function mostrarProductosPorCategoria(productos) {
   productos.forEach((producto) => {
