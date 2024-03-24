@@ -15,7 +15,7 @@ function cargarProductos(productos) {
       class="card-img-top" alt="${producto.titulo}">
      <div class="detail-box">
       <h5 class="shop-product">${producto.titulo}</h5>
-      <span class="shop-price">$${producto.precio}</span>
+      <span class="shop-price">US $${producto.precio}</span>
        Cantidad
       <input type="number" value="1" placeholder="1" class="cart-quantity">
      </div>
