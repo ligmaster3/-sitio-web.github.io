@@ -82,7 +82,7 @@ function mostrarProductosPorCategoria(productos) {
     });
   });
 }
-mostrarProductosPorCategoria();
+mostrarProductosPorCategoria;
 
 
 // let agregarProductos = document.querySelectorAll(".cart-btn-shop");
