@@ -78,12 +78,10 @@ function mostrarProductosPorCategoria(productos) {
     // Evento para el botón de añadir al carrito
     const botonAñadir = productoElemento.querySelector(".card-btn-shop");
     botonAñadir.addEventListener("click", function () {
-      alert("Producto añadido al carrito:");
+      console.log("Producto añadido al carrito:");
     });
   });
 }
 mostrarProductosPorCategoria;
 
-
-// let agregarProductos = document.querySelectorAll(".cart-btn-shop");
-// console.log(agregarProductos);
+//   botonAgregar = document.querySelectorAll(".card-btn-shop");
