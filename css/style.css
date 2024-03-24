@@ -472,9 +472,13 @@ footer {
 
 .cart-acciones-derecha {
   display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  align-content: flex-end;
+  justify-content: flex-end;
 }
 
-.cart-acciones-derecha {
+.cart-acciones-derecha { 
   .cart-acciones-vaciar {
     border: 0;
     padding: 1rem;
@@ -490,37 +494,25 @@ footer {
 
   .cart-acciones-total {
     display: flex;
-    background-color: gray;
+    background-color: #000;
     padding: 1rem;
     color: white;
     text-transform: uppercase;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
     gap: 1rem;
+    justify-content: flex-end;
   }
 
   .cart-acciones-comprar {
     border: 0;
-    background-color: rgb(0, 221, 255);
+    background-color: rgb(0, 38, 255);
     padding: 1rem;
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-radius: 1rem;
   }
 }
 
-.cart-acciones-total {
-  display: flex;
-  background-color: gray;
-  padding: 1rem;
-  color: white;
-  text-transform: uppercase;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  gap: 1rem;
-}
 
 .cart-acciones-total p {
   padding-top: 1rem;
