@@ -56,7 +56,7 @@ function buscarLibro() {
 //---- Evento para cargar las card al index ---//
 
 function mostrarProductosPorCategoria(productos) {
-  productos.forEach((producto) => {
+  productos.forEach(producto => {
     console.log(producto);
     const productoElemento = document.createElement("div");
     productoElemento.classList.add("card");
@@ -71,18 +71,19 @@ function mostrarProductosPorCategoria(productos) {
       </div>
     `;
     const categoria = producto.Categoria.toLowerCase();
-    console.log(categoria);
+
     const contenedorCategoria = document.querySelector(`.lista-${categoria}`);
     contenedorCategoria.appendChild(productoElemento);
 
     // Evento para el botón de añadir al carrito
     const botonAñadir = productoElemento.querySelector(".card-btn-shop");
     botonAñadir.addEventListener("click", function () {
-      alert("Producto añadido al carrito:", producto);
+      alert("Producto añadido al carrito:");
     });
   });
 }
 mostrarProductosPorCategoria();
 
-let addbtn = document.querySelectorAll(".cart-btn-shop");
-console.log(addbtn);
+
+// let agregarProductos = document.querySelectorAll(".cart-btn-shop");
+// console.log(agregarProductos);
