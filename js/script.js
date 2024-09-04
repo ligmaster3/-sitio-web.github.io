@@ -71,7 +71,6 @@ function mostrarProductosPorCategoria(productos) {
       </div>
     `;
     const categoria = producto.Categoria.toLowerCase();
-
     const contenedorCategoria = document.querySelector(`.lista-${categoria}`);
     contenedorCategoria.appendChild(productoElemento);
 
@@ -82,6 +81,6 @@ function mostrarProductosPorCategoria(productos) {
     });
   });
 }
-mostrarProductosPorCategoria;
+mostrarProductosPorCategoria();
 
 //   botonAgregar = document.querySelectorAll(".card-btn-shop");
