@@ -1,7 +1,8 @@
-fetch("js/productos.json")
+fetch(`js/productos.json?v=${new Date().getTime()}`)
   .then((response) => response.json())
   .then((data) => cargarProductos(data))
   .catch((error) => console.log("Error al cargar los productos:", error));
+
 
 const contenedorProductos = document.getElementById("cart-content");
 
@@ -9,7 +10,8 @@ function cargarProductos(productos) {
   productos.forEach((producto) => {
     console.log(producto);
     const cartBox = document.createElement("div");
-    cartBox.classList = "shop-box";
+   contenedorProductos.innerHTML = ""; //
+    cartBox.classList = "shop-box"; 
     cartBox.innerHTML = `
     <img class="shop-img" src="${producto.img}"
       class="card-img-top" alt="${producto.titulo}">
@@ -22,7 +24,7 @@ function cargarProductos(productos) {
        <i class="fa-solid fa-trash cart-remove"></i>
     </div>
     `;
-
+  
     contenedorProductos.appendChild(cartBox);
    // Evento para vaciar todos los elementos de shop-content
    const vaciarCarritoBtn = document.getElementById("cart-vaciar");
@@ -45,4 +47,4 @@ function cargarProductos(productos) {
    });
  });
 }
-cargarProductos;
+cargarProductos();
