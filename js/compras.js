@@ -8,7 +8,6 @@ const contenedorProductos = document.getElementById("cart-content");
 
 function cargarProductos(productos) {
   productos.forEach((producto) => {
-    console.log(producto);
     const cartBox = document.createElement("div");
    contenedorProductos.innerHTML = ""; //
     cartBox.classList = "shop-box"; 
