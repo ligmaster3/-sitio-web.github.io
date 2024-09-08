@@ -30,39 +30,39 @@
 							<h3 class="thin text-center">Registra una nueva cuenta</h3>
 							<p class="text-center text-muted">Si ya cuenta con un usuario, presione aqui. <a href="signin.html">Login</a>.</p>
 							<hr>
-
-							<form>
+			
+							<form action="register.php" method="POST">
 								<div class="top-margin">
 									<label>Nombre</label>
-									<input type="text" class="form-control">
+									<input type="text" name="nombre" class="form-control" required>
 								</div>
 								<div class="top-margin">
 									<label>Apellido</label>
-									<input type="text" class="form-control">
+									<input type="text" name="apellido" class="form-control" required>
 								</div>
 								<div class="top-margin">
 									<label>Correo <span class="text-danger">*</span></label>
-									<input type="text" class="form-control">
+									<input type="email" name="correo" class="form-control" required>
 								</div>
-
+			
 								<div class="row top-margin">
 									<div class="col-sm-6">
 										<label>Contraseña <span class="text-danger">*</span></label>
-										<input type="text" class="form-control">
+										<input type="password" name="contrasena" class="form-control" required>
 									</div>
 									<div class="col-sm-6">
 										<label>Confirmar Contraseña <span class="text-danger">*</span></label>
-										<input type="text" class="form-control">
+										<input type="password" name="confirmar_contrasena" class="form-control" required>
 									</div>
 								</div>
-
+			
 								<hr>
-
+			
 								<div class="row">
 									<div class="col-lg-8">
 										<label class="checkbox">
-											<input type="checkbox"> 
-											Lei los<a href="page_terms.html">Terminos y Condiciones</a>
+											<input type="checkbox" required> 
+											Lei los <a href="page_terms.html">Terminos y Condiciones</a>
 										</label>                        
 									</div>
 									<div class="col-lg-4 text-right">
@@ -72,9 +72,9 @@
 							</form>
 						</div>
 					</div>
-
 				</div>
 			</article>
+			
 			<!-- /Article -->
 		</div>
 	</div>	
