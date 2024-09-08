@@ -57,7 +57,6 @@ function buscarLibro() {
 
 function mostrarProductosPorCategoria(productos) {
   productos.forEach(producto => {
-    console.log(producto);
     const productoElemento = document.createElement("div");
     productoElemento.classList.add("card");
     productoElemento.innerHTML = `
