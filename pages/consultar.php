@@ -43,9 +43,7 @@
                                 <ul class='nav' style='justify-content: space-between;'>
                                     <li class='nav-item'><a class='nav-link'>ID</a></li>
                                     <li class='nav-item'><a class='nav-link'>Nombre</a></li>
-                                    <li class='nav-item'><a class='nav-link'>Centro de Votación</a></li>
-                                    <li class='nav-item'><a class='nav-link'>Cédula</a></li>
-                                    <li class='nav-item'><a class='nav-link'>Mesa</a></li>
+                                  
                                 </ul>
                             </div>
                         </section>";
@@ -57,9 +55,7 @@
                                 <ul class='d-flex p-4 text-center' style='justify-content: space-between;'>
                                     <li class='nav-item'><a class='nav-link'>" . $row["id"] . "</a></li>
                                     <li class='nav-item'><a class='nav-link'>" . $row["nombre"] . " " . $row["apellido"] . "</a></li>
-                                    <li class='nav-item'><a class='nav-link'>" . $row["cetro_deVotacion"] . "</a></li>
-                                    <li class='nav-item'><a class='nav-link'>" . $row["cedula"] . "</a></li>
-                                    <li class='nav-item'><a class='nav-link'>" . $row["mesa"] . "</a></li>
+                                  
                                 </ul>
                             </div>";
                         }
@@ -80,7 +76,7 @@
         </div>
     </div>
 </body>
-//Este código permite consultar la información de votantes almacenada en una base de datos, mostrando los resultados en una página web con 
+//Este código permite consultar la información de los usuarios almacenados en una base de datos, mostrando los resultados en de inicio de secion de una página web con 
 //diseño responsivo gracias a Bootstrap. La consulta se realiza de manera segura usando PHP y declaraciones preparadas
 //para evitar vulnerabilidades comunes.
 </html>
