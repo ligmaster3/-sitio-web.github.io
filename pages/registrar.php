@@ -11,53 +11,65 @@
 </head>
 
 <body>
-    <div class="container-sm">
-        <div class="consult-div">
+<div class="container-sm">
+    <div class="consult-div">
 
-            <?php
-            include 'conexion.php';
+        <?php
+        include 'conexion.php'; // Asegúrate de tener la conexión a la base de datos en este archivo
 
-            // Verificar si se ha enviado el formulario e asigna los datos a la tabla
-            if (isset($_POST['signUP'])) {
-                $cedula = $_POST['cedula'];
-                $nombre = $_POST['nombre'];
-                $apellido = $_POST['apellido'];
-                $centrovotacion = $_POST['centrovotacion'];
-                $numeromesa = $_POST['numeromesa'];
+        // Verificar si se ha enviado el formulario
+        if (isset($_POST['signUP'])) {
+            $nombre = $_POST['nombre'];
+            $apellido = $_POST['apellido'];
+            $correo = $_POST['correo'];
+            $contrasena = $_POST['contrasena'];
+            $confirmContrasena = $_POST['confirmcontrasena'];
 
-                $sql = "INSERT INTO personas (cedula, nombre, apellido, cetro_deVotacion, mesa) 
-            VALUES (?, ?, ?, ?, ?)"; //inserta los a la tabla de datos
+            // Verificar que las contraseñas coinciden
+            if ($contrasena != $confirmContrasena) {
+                echo "<div class='alert alert-danger'>Las contraseñas no coinciden.</div>";
+            } else {
+                // Encriptar la contraseña antes de guardarla
+                $contrasenaEncriptada = password_hash($contrasena, PASSWORD_BCRYPT);
+
+                // Consulta SQL para insertar el usuario
+                $sql = "INSERT INTO personas (nombre, apellido, correo, contrasena) 
+                        VALUES (?, ?, ?, ?)"; // No incluimos confirmación de contraseña en la base de datos
                 $stmt = $conn->prepare($sql);
-                $stmt->bind_param("ssssi", $cedula, $nombre, $apellido, $centrovotacion, $numeromesa); //vincula los parametros de consulta y los envia al mysql
+                $stmt->bind_param("ssss", $nombre, $apellido, $correo, $contrasenaEncriptada); // Corrección: correo es string
 
                 if ($stmt->execute()) {
-                    echo ' ';
+                    // Modal de confirmación
+                    echo '
+                    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalChoice">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content rounded-3 shadow">
+                                <div class="modal-body p-4 text-center">
+                                    <h5 class="mb-0">Registro exitoso</h5>
+                                    <p class="mb-0">El registro ha sido ingresado correctamente.</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-8 h-8" style="height: 300px; color:green;">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </div>
+                                <div class="modal-footer flex-nowrap p-0" style="justify-content: center; list-style: none;">
+                                    <a class="btn-accept" href="index.php">Volver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
                 } else {
-                    echo "Error: " . $stmt->error;
+                    echo "<div class='alert alert-danger'>Error: " . $stmt->error . "</div>";
                 }
 
                 $stmt->close();
-                $conn->close();
             }
-            ?>
-            <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalChoice">
-                <div class="modal-dialog" role="document"> // crea un modal de confirmacion
-                    <div class="modal-content rounded-3 shadow">
-                        <div class="modal-body p-4 text-center">
-                            <h5 class="mb-0">Registro exitoso</h5>
-                            <p class="mb-0">El registro ha sido ingresado correctamente.</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-8 h-8" style="height: 300px; color:green;">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
-                        </div>
-                        <div class="modal-footer flex-nowrap p-0" style="justify-content: center; list-style: none;">
-                            <a class="btn-accept" href="index.php">vovler</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+            $conn->close();
+        }
+        ?>
     </div>
+</div>
+
 
 
 </body>
