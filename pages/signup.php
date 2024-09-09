@@ -17,6 +17,8 @@
 </head>
 
 <body>
+
+
 			<!-- Article main content -->
 			<article class="col-xs-12 maincontent">
 				<header class="page-header">
@@ -65,7 +67,9 @@
 										</label>                        
 									</div>
 									<div class="col-lg-4 text-right">
-										<button class="btn btn-action" type="submit"><a href="/pages/registrar.php"></a>Registro</button>
+
+										<button class="btn btn-action" type="submit"><a href="../pages/registrar.php"></a>Registro</button>
+
 									</div>
 								</div>
 							</form>
