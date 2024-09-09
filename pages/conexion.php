@@ -7,7 +7,7 @@ $database = "gestion_de_usuario";
 $conn = new mysqli($servername, $username, $password, $database);
 // Chequear conexión
 if ($conn->connect_error) {
- die("Connection failed: " . $conn->connect_error);
+    error_log("Connection failed: " . $conn->connect_error); // Registrar el error
+    echo "No se pudo conectar a la base de datos. Inténtelo más tarde."; // Mensaje amigable para el usuario
+    exit(); // Asegura que el script no continúe ejecutándose
 }
- echo("conexion establecida");
-?>
