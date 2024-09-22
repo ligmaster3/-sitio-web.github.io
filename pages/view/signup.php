@@ -41,6 +41,10 @@
                             <input type="text" name="apellido" class="form-control" required>
                         </div>
                         <div class="top-margin">
+                            <label>Edad</label>
+                            <input type="text" name="apellido" class="form-control" required>
+                        </div>
+                        <div class="top-margin">
                             <label>Correo <span class="text-danger">*</span></label>
                             <input type="email" name="correo" class="form-control" required>
                         </div>
