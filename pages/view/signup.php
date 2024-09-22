@@ -5,10 +5,11 @@
 	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	
-	<title>Sign up - Progressus Bootstrap template</title>
+	<title>Sign - in </title>
 
 	<link rel="shortcut icon" href="../imagen/logos/users-alt.png">
 	
+	<link rel="stylesheet" href="/src/public/css/style-sesion.css">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	
@@ -60,7 +61,7 @@
 										</label>                        
 									</div>
 									<div class="col-lg-4 text-right">
-										<button class="btn btn-action" type="submit"><a href="/pages/registrar.php"></a>Registro</button>
+										<button class="btn btn-action" type="submit"><a href="/pages/view/registrar.php"></a>Registro</button>
 									</div>
 								</div>
 							</form>
