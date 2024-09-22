@@ -1,4 +1,4 @@
-fetch(`js/productos.json?v=${new Date().getTime()}`)
+fetch(`/src/public/js/productos.json?v=${new Date().getTime()}`)
   .then((response) => response.json())
   .then((data) => cargarProductos(data))
   .catch((error) => console.log("Error al cargar los productos:", error));
