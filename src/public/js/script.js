@@ -76,8 +76,27 @@ function mostrarProductosPorCategoria(productos) {
     // Evento para el botón de añadir al carrito
     const botonAñadir = productoElemento.querySelector(".card-btn-shop");
     botonAñadir.addEventListener("click", function () {
+      Toastify({
+        text: `${producto.titulo} añadido al carrito`,
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){
+          // Acción al hacer clic en la notificación
+          console.log("Notificación clickeada");
+        }
+      }).showToast();
       console.log("Producto añadido al carrito:");
     });
+
+    
+
   });
 }
 mostrarProductosPorCategoria();
