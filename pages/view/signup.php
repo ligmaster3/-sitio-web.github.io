@@ -67,7 +67,7 @@
                             </div>
                             <div class="col-lg-4 text-right">
                                 <button class="btn btn-action" type="submit"><a
-                                        href="/pages/registrar.php"></a>Registro</button>
+                                        href="/pages/view/register.php"></a>Registro</button>
                             </div>
                         </div>
                     </form>
