@@ -12,7 +12,8 @@
 
     <title>Registro de Usuario</title>
 
-    <link rel="stylesheet" href="/src/public/css/style-sesion.css">
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="../css/style-sesion.css">
 </head>
 
 <body>
@@ -74,39 +75,37 @@
         }
         ?>
 
-            <div class="container-sm">
-                <div class="consult-div">
-                    <!-- Formulario de registro -->
-                    <form action="" method="POST">
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" name="nombre" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="apellido" class="form-label">Apellido</label>
-                            <input type="text" name="apellido" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="edad" class="form-label">Edad</label>
-                            <input type="text" name="edad" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Correo</label>
-                            <input type="email" name="correo" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contrasena" class="form-label">Contraseña</label>
-                            <input type="password" name="contrasena" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="confirmcontrasena" class="form-label">Confirmar Contraseña</label>
-                            <input type="password" name="confirmcontrasena" class="form-control" required>
-                        </div>
-                        <button type="submit" name="signUP" class="btn btn-primary">Registrar</button>
-                    </form>
-
+            <!-- Formulario de registro -->
+            <form action="" method="POST">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" class="form-control" required>
                 </div>
-            </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" name="apellido" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="text" name="edad" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" name="correo" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label">Contraseña</label>
+                    <input type="password" name="contrasena" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmcontrasena" class="form-label">Confirmar Contraseña</label>
+                    <input type="password" name="confirmcontrasena" class="form-control" required>
+                </div>
+                <button type="submit" name="signUP" class="btn btn-primary">Registrar</button>
+            </form>
+
+        </div>
+    </div>
 
 </body>
 
