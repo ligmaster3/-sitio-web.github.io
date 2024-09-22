@@ -52,7 +52,7 @@
                                     </svg>
                                 </div>
                                 <div class="modal-footer flex-nowrap p-0" style="justify-content: center; list-style: none;">
-                                    <a class="btn-accept" href="index.php">Volver</a>
+                                    <a class="btn-accept" href="/index.html">Volver</a>
                                 </div>
                             </div>
                         </div>
