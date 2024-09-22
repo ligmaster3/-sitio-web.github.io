@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "gestion_de_usuario";
+$database = "registro_usuarios";
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database);
 // Chequear conexión
