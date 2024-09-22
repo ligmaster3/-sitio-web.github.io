@@ -131,6 +131,17 @@ header ul li a:hover::before,
 header ul li a:hover::after {
   transform: scaleX(1);
 }
+@media (max-width: 740px) {
+  header .navbar-collapse .nav-item {
+    text-align: center;
+  }
+  header .navbar-collapse form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 17px;
+  }
+}
+
 
 .container {
   display: inline-block;
@@ -141,6 +152,9 @@ header ul li a:hover::after {
   margin: 0 auto;
   padding: 5px;
   max-width: 100%;
+}
+.contenedor-productos section {
+  display: flex;
 }
 
 .card {
