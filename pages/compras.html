@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Libros Web/Compras</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/compras.js" async></script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <p class="logo">
+          <i class="fa-solid fa-book" style="color: white;"></i><a style="color: wheat;">Libreria Nautidog</a></p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-arrow-left"></i>Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i>Compras</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="shop">
+    <h2 class="shop-title">Tu Carrito </h2>
+    <div class="shop-content" id="cart-content">
+
+      <!-- <div class="shop-box">
+        <img class="shop-img"
+          src="https://images.thalia.media/-/BF2000-2000/083e7d2e81b0453a87e87f51d37d8ead/harry-potter-y-la-piedra-filosofal-epub-j-k-rowling.jpeg.jpg"
+          alt="product-cart-shop">
+        <div class="detail-box">
+          <div class="shop-product">titulo-p</div>
+          <div class="shop-price">$123</div>
+          Cantidad
+          <input type="number" value="1" placeholder="1" class="cart-quantity">
+        </div>
+        <i class="fa-solid fa-trash cart-remove"></i>
+      </div> -->
+
+    </div>
+
+    <div id="cart-acciones" class="cart-acciones disabled">
+      <div class="cart-acciones-izquierda">
+        <button id="cart-vaciar" class="cart-acciones-vaciar">Vaciar carrito</button>
+      </div>
+      <div class="cart-acciones-derecha">
+        <div class="cart-acciones-total">
+          <p>Total:</p>
+          <p id="total">$0</p>
+        </div>
+        <button id="cart-acciones-comprar" class="cart-acciones-comprar">Comprar ahora</button>
+      </div>
+    </div>
+
+    <p id="cart-comprado" class="cart-comprado disabled">Muchas gracias por tu compra. <i
+        class="bi bi-emoji-laughing"></i></p>
+  </div>
+
+  <footer>
+    <div class="conteniner-footer">
+      <p class="logo"><i class="fa-solid fa-book" style="color: white;"></i><a style="color: wheat;">Libreria Nautidog</a></p>
+    </div>
+
+    <div class="text-description">
+      <h3>REDES SOCIALES</h3>
+      <p> Subscribe to our newsletter for a weekly dose
+        of news, updates, helpful tips, and
+        exclusive offers.</p>
+    </div>
+
+    <div class="conteiner-social">
+      <h3>SIGUENOS</h3>
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa-brands fa-twitter social"></i></a>
+        <span>Twitter</span>
+      </div>
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa-brands fa-facebook social"></i></a>
+        <span>Facebook</span>
+      </div>
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa-brands fa-instagram social"></i></a>
+        <span>Instagram</span>
+      </div>
+      <div class="social-icon">
+        <a href="#">
+          <i class="fa-brands fa-github social"></i></a>
+        <span>Github</span>
+      </div>
+    </div>
+
+    <div class="conteiner-politicas">
+      <ul class="nav justify-content-center">
+        <a class="nav-link" href="#">License</a>
+        <a class="nav-link" href="#">Terms of Services</a>
+        <a class="nav-link" href="#">Privacy Polity</a>
+        <a class="nav-link" href="#">Refounds</a>
+      </ul>
+      <p>Copyright © 2024 <a class="links" href="#">Libreria Nautidog</a> All Rights Reserved </p>
+    </div>
+    <hr class="featurette-divider">
+  </footer>
+
+
+</body>
+
+</html>
