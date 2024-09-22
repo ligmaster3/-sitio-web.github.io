@@ -75,35 +75,54 @@
         }
         ?>
 
-            <!-- Formulario de registro -->
-            <form action="" method="POST">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" name="nombre" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" name="apellido" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="edad" class="form-label">Edad</label>
-                    <input type="text" name="edad" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="correo" class="form-label">Correo</label>
-                    <input type="email" name="correo" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="contrasena" class="form-label">Contraseña</label>
-                    <input type="password" name="contrasena" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="confirmcontrasena" class="form-label">Confirmar Contraseña</label>
-                    <input type="password" name="confirmcontrasena" class="form-control" required>
-                </div>
-                <button type="submit" name="signUP" class="btn btn-primary">Registrar</button>
-            </form>
+            <div class="container-sm">
+                <div class="consult-div">
+                    <!-- Formulario de registro -->
+                    <form action="" method="POST">
+                        <div class="top-margin">
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="top-margin">
+                            <label>Apellido</label>
+                            <input type="text" name="apellido" class="form-control" required>
+                        </div>
+                        <div class="top-margin">
+                            <label>Edad</label>
+                            <input type="text" name="apellido" class="form-control" required>
+                        </div>
+                        <div class="top-margin">
+                            <label>Correo <span class="text-danger">*</span></label>
+                            <input type="email" name="correo" class="form-control" required>
+                        </div>
 
+                        <div class="row top-margin">
+                            <div class="col-sm-6">
+                                <label>Contraseña <span class="text-danger">*</span></label>
+                                <input type="password" name="contrasena" class="form-control" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <label>Confirmar Contraseña <span class="text-danger">*</span></label>
+                                <input type="password" name="confirmar_contrasena" class="form-control" required>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    Lei los <a href="page_terms.html">Términos y Condiciones</a>
+                                </label>
+                            </div>
+                            <div class="col-lg-4 text-right">
+                                <button type="submit" class="btn btn-action">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
