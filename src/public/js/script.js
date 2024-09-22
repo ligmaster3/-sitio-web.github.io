@@ -47,7 +47,7 @@ function buscarLibro() {
 
 
 
-  fetch('js/productos.json')
+  fetch('/src/public/js/productos.json')
   .then(response => response.json())
   .then(data => mostrarProductosPorCategoria(data))
   .catch(error => console.log(error));
