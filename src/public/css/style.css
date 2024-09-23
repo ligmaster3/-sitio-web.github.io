@@ -39,7 +39,11 @@ img {
   font-size: 2rem;
 }
 
-
+main {
+  display: inline-block;
+  width: 96%;
+  padding: 10px;
+}
 .container-img {
   background: url("https://i1.wp.com/www.24symbols.com/24stories/wp-content/uploads/2019/12/BestOf2019_es.png?fit=1170%2C686&ssl=1");
   background-position: center center;
@@ -153,16 +157,18 @@ header ul li a:hover::after {
   padding: 5px;
   max-width: 100%;
 }
-.contenedor-productos section {
+
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste flexible */
 }
+
 
 .card {
   position: relative;
   border: 1px solid #ccc;
+  box-shadow: 0 0 20px;
   box-sizing: border-box;
   display: inline-block;
   flex-direction: column;
@@ -174,13 +180,12 @@ header ul li a:hover::after {
   transition: all 0.3s ease;
   width: 180px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.776);
+ 
   overflow: hidden;
 }
 
@@ -252,6 +257,7 @@ header ul li a:hover::after {
     width: 122px;
     overflow: hidden;
   }
+  
 
   /* .card:hover {
     width: 40%;
@@ -272,6 +278,21 @@ header ul li a:hover::after {
   .card:hover .card-body {
     transform: rotateX(0deg);
   }
+  @media (max-width: 768px) {
+    .grid-container {
+      
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+
 }
 
 /* Estilos para el pie de pagina index */
