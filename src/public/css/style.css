@@ -41,7 +41,7 @@ img {
 
 main {
   display: inline-block;
-  width: 96%;
+  width: 100%;
   padding: 10px;
 }
 .container-img {
@@ -234,6 +234,10 @@ header ul li a:hover::after {
 }
 
 @media (max-width: 1000px) {
+  .container-description h4 {
+    text-align: center;
+    margin: auto;
+  }
   .card-list-products {
     display: flex;
     width: 100%;
@@ -250,11 +254,11 @@ header ul li a:hover::after {
     box-shadow: 0 0 20px;
     box-sizing: border-box;
     height: 230px;
-    margin: 10px 0 0 10px;
+    margin: 0;
     margin-bottom: 20px;
     padding: 2px;
     transition: all 0.3s ease;
-    width: 122px;
+    width: 142px;
     overflow: hidden;
   }
   
@@ -263,7 +267,15 @@ header ul li a:hover::after {
     width: 40%;
     overflow: hidden;
   } */
-
+.card-body {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: #222222d7;
+  transform: none;
+}
   .card .card-body span {
     margin: 20px;
     font-size: 18px;
@@ -280,8 +292,9 @@ header ul li a:hover::after {
   }
   @media (max-width: 768px) {
     .grid-container {
-      
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      padding: 24px;
+      gap: 14px;
+        grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
     }
 
     .card-body {
@@ -398,6 +411,13 @@ footer {
 @media (max-width: 1040px) {
   .social {
     font-size: 3vh;
+  }
+  .conteiner-social h3 {
+    text-align: center;
+  }
+  footer .text-description p {
+    padding: 6px;
+    text-align: justify;
   }
 }
 
