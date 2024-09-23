@@ -39,11 +39,6 @@ img {
   font-size: 2rem;
 }
 
-main {
-  display: inline-block;
-  width: 96%;
-  padding: 10px;
-}
 
 .container-img {
   background: url("https://i1.wp.com/www.24symbols.com/24stories/wp-content/uploads/2019/12/BestOf2019_es.png?fit=1170%2C686&ssl=1");
@@ -64,10 +59,15 @@ main {
 }
 
 .sesion {
-  background-color: rgb(23, 157, 137);
+  background-color: #2c3e50;
+  color: white;
   content: center;
-  margin-bottom: 80px;
-  margin-top: 100px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.sesion h2 {
+  margin: 0;
+  font-size: 24px;
 }
 
 #buscador {
@@ -154,13 +154,15 @@ header ul li a:hover::after {
   max-width: 100%;
 }
 .contenedor-productos section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
   position: relative;
   border: 1px solid #ccc;
-  box-shadow: 0 0 20px;
   box-sizing: border-box;
   display: inline-block;
   flex-direction: column;
@@ -172,13 +174,13 @@ header ul li a:hover::after {
   transition: all 0.3s ease;
   width: 180px;
   overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.776);
-  height: 320px;
-  width: 200px;
   overflow: hidden;
 }
 
@@ -251,10 +253,10 @@ header ul li a:hover::after {
     overflow: hidden;
   }
 
-  .card:hover {
+  /* .card:hover {
     width: 40%;
     overflow: hidden;
-  }
+  } */
 
   .card .card-body span {
     margin: 20px;
