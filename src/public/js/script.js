@@ -66,7 +66,6 @@ function mostrarProductosPorCategoria(productos) {
         <h5 class="card-title">${producto.titulo}</h5>
         <span class="card-precio">$${producto.precio}</span>
         <button class="btn btn-primary card-btn-shop" id="${producto.id}">Añadir</button>
-        <button class="btn btn-info card-btn-info">Detalle</button>
       </div>
     `;
     const categoria = producto.Categoria.toLowerCase();
