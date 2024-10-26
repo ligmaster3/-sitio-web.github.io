@@ -1,0 +1,99 @@
+  <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="row">
+                <!-- First Column -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">About Us</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Features</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Pricing</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">FAQs</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Products</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Solutions</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Support</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Contact</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Third Column -->
+                <div class="col-12 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Address</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Phone</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="#" class="nav-link p-0 text-light">Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="border-top pt-4 mt-4">
+                <div class="row align-items-center">
+                    <!-- Copyright -->
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="d-flex align-items-center">
+                            <a href="/" class="me-2 text-light text-decoration-none">
+                                <i class="bi bi-bootstrap fs-4"></i>
+                            </a>
+                            <span class="text-light">© 2024 Company, Inc</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="social-links  icons">
+                            <a href="#" class="text-light me-3 fs-5">
+                                <i class="fa-brands fa-facebook-f icon-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="text-light me-3 fs-5">
+                                <i class="fa-brands fa-twitter icon-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="text-light me-3 fs-5 text-decoration-none">
+                                <i class="fa-brands fa-linkedin icon-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="text-light fs-5">
+                                <i class="fa-brands fa-github icon-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
