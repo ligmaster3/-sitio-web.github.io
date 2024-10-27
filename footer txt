@@ -97,3 +97,62 @@
             </div>
         </div>
     </footer>
+
+
+/* Footer */
+.icons {
+    display: flex;
+    justify-content: end;
+    border: solid 1px #222;
+    cursor: pointer;
+
+}
+
+.icons a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    border-radius: 30%;
+    background-color: #222;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.icnon i:hover {
+    border: 1px solid #ffffff;
+}
+
+/* .icons i:hover {
+    background-color: #555;
+  } */
+
+.icon-facebook:hover {
+    color: #4f1ffd;
+    /* Color de Facebook */
+}
+
+.icon-twitter:hover {
+    color: #1da1f2;
+    /* Color de Twitter */
+}
+
+.icon-linkedin:hover {
+    color: #0077b5;
+    /* Color de LinkedIn */
+}
+
+.icon-github:hover {
+    color: #ffffffbc;
+    /* Color de GitHub */
+}
+
+@media (width < 1000px) {}
